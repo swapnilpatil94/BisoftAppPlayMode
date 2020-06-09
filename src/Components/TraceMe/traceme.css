@@ -1,0 +1,89 @@
+.drawing {
+  width: 60vw;
+  height: 70vh;
+}
+
+.drawArea {
+  width: 60vw;
+  height: 70vh;
+  border: 1px solid rgb(125, 2, 173);
+  float: left;
+  cursor: crosshair;
+  border-radius: 2vw;
+  position: relative;
+  top:10vw;
+  left: 15vw;  
+}
+
+.moving-element{
+  position: absolute;;
+  transform: rotate(90deg);
+  top:0vw;
+}
+  
+.path {
+    fill: none;
+   stroke-width: 0.6vw;
+    stroke: #311B92;
+    position: relative;
+    top: 50vw;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    /* border-radius: 50%; */
+
+}
+  
+
+  
+  
+  
+@keyframes move {
+    100% {
+      offset-distance: 100%;   
+    }
+}
+  
+  
+
+
+  
+#traceme-btns{
+    position: relative;
+    margin-left: 80vw;
+    top: 18vw;
+    width: 10vw;
+    
+}
+  
+#draw-btn{
+  
+    background-image: url("/imagesplay/trace_button_draw.png");
+    background-size: cover  ;
+    background-repeat: no-repeat;
+    width:5vw;
+    height:5vw;
+    float: left;
+}
+  
+#erase-btn{
+    background-image: url("/imagesplay/trace_button_erase.png");
+    background-size: cover  ;
+    background-repeat: no-repeat;
+    width:5vw;
+    height:5vw;
+    margin-left:7vw;
+}
+  
+
+
+#play-btn{
+    background-image: url("/imagesplay/trace_button_play.png");
+    background-size: cover  ;
+    background-repeat: no-repeat;
+    width:8vw;
+    height:8vw;
+    margin-left:2.5vw;
+    margin-top:2vw;
+}
+  
+  

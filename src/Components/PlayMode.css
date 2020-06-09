@@ -1,0 +1,111 @@
+.backBtn{
+   
+    background:url("/imagesplay/button_back.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    top:3vh;
+    left:6vw;
+}
+
+
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top:25vh;
+}
+
+.sizeofCard{
+    width: 15vw;
+    margin: 2vw;
+    text-align: center;
+    height: 19vw;
+    position: relative;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.sizeofCard:hover{
+    transform: scaleX(1.1) scaleY(1.1);
+    background-color: transparent;
+
+}   
+
+.remoteCard{
+   
+
+    background:url("/imagesplay/button_remote.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.speakCard{
+    background:url("/imagesplay/button_speak.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.musicCard{
+    background:url("/imagesplay/button_music.png");
+    background-size: contain;
+    background-repeat: no-repeat;  
+}
+
+.cameraCard{
+    background:url("/imagesplay/button_camera.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.traceMeCard{
+    background:url("/imagesplay/button_traceme.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cardName{
+    font-family:Quicksand;
+    color: #311B92;
+    margin-bottom: 5vw;
+    position: relative;
+    left:-1vw;
+    font-weight:640;
+    font-size: 2vw;
+
+}
+
+
+.cardDescription{
+position: absolute;
+width:13vw;
+text-align: center;
+/* letter-spacing: 0px; */
+color: #5B5B5B;
+top:13vw;
+padding: 0.2vw;
+font-family:Quicksand;
+font-size:1.2vw;
+font-weight: 550;
+
+}
+
+
+
+.Playtitle{
+    position: absolute;
+    font-family:Quicksand;
+    color: #311B92;
+    margin-bottom: 5vw;
+    position: absolute;
+    left:14vw;
+    font-weight:640;
+    font-size: 2vw;
+
+}
+
