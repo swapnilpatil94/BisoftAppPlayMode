@@ -1,0 +1,18 @@
+.camera{
+    border: 0.3vw solid #311B92;
+    border-radius: 12px;
+    position: relative;
+    top: 8vw;
+    left: 14vw;
+    width: 46vw;
+    height: 31vw;
+    transform: scaleX(-1);
+
+}
+
+.faceOP{
+    position: absolute;
+    top:40vw;
+    color: #311B92;
+    left:36vw;
+}

@@ -1,0 +1,349 @@
+.help{
+    position:absolute;
+    top:2vw;
+    left:89vw;
+
+    background-image: url('/imagesplay/button_help.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 10vh;
+    height: 5vw;
+}
+
+
+.usb{
+    position:absolute;
+    top:-0.2vw;
+    left:63vw;
+
+    background-image: url('/imagesplay/usb connected.png');
+    background-size: contain;
+    background-repeat:no-repeat;
+    width: 6vh;
+    height: 3.23vw;
+}
+
+
+.up{ 
+
+    background-image: url('/imagesplay/joystick_up.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+  
+
+    width: 25vh;
+    height: 6vw;
+
+    position: absolute;
+    top:12vw;
+    left: 4vw;
+}
+
+.down{ 
+
+    background-image: url('/imagesplay/joystick_down.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 25vh;
+    height: 6vw;
+
+
+    position: absolute;
+    top:27vw;
+    left: 4vw;
+}
+.left{ 
+
+    background-image: url('/imagesplay/joystick_left.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    height: 12vw;
+    width: 13vh;
+
+    position: absolute;
+    top:17vw;
+    /* left: 2vw; */
+}
+.right{ 
+
+    background-image: url('/imagesplay/joystick_right.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    height: 12vw;
+    width: 13vh;
+    
+    position: absolute;
+    top: 17vw;
+    left: 14vw;
+
+
+}
+
+.ok{ 
+
+    background-image: url('/imagesplay/joystick_mid.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+ 
+
+    width: 13.5vh;
+    height: 6.5vw;
+    position: absolute;
+    top: 19.5vw;
+
+   
+    left: 7vw;
+}
+
+
+.Remote-Keys{
+    position: absolute;
+    top:1.2vw;
+    left: 10vw;
+}
+
+
+
+
+
+
+
+/* Joystick css*/
+
+#joystick {
+   
+    background-image: url('/imagesplay/jstickbg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 16vw;
+    height: 16vw;
+    position: absolute;
+    top: 9vw;
+   }
+   #joystick #stick {
+    position: absolute;
+    background: transparent;
+    background-image: url('/imagesplay/jstick.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 8vw;
+    top: 4vw;
+    left: 4.2vw;
+    border-radius:6vw;
+   }
+ 
+   .joystickDiv{
+       position: absolute;
+       width: 5vw;
+       height: 5vw;
+       top:5vw;
+       left:2vw;
+   }
+
+
+/*  */
+
+
+.click:hover{
+    /* transform: scaleX(1.05) scaleY(1.05); */
+    cursor: pointer;
+}
+
+
+.click:active {
+    background-color: transparent;
+    /* transform: translateX(2px) translateY(2px) ; */
+
+    transform: scaleX(1.05) scaleY(1.05) scaleZ(1.05);
+
+  }
+
+  .click {
+    /* position: relative; */
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .click:after {
+    content: "";
+    /* display: block; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, rgba(250, 250, 250, 0.74) 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform .5s, opacity 1s;
+  }
+  
+  .click:active:after {
+    transform: scale(0, 0);
+    opacity: .3;
+    transition: 0s;
+  }
+/* ======================================= */
+
+.Follow-me-div{
+    position: absolute;
+    left:40vw;
+    top:15vw;
+}
+.follow-me{
+    background-image: url('/imagesplay/play_remote_followme.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 13vh;
+    height: 6vw;
+    justify-content: center;
+    margin-left: 0.8vw;
+}
+
+.Smart-div{
+    position: absolute;
+    left:51vw;
+    top:15vw;
+}
+.smart{ 
+    background-image: url('/imagesplay/play_remote_smartmode.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    
+    width: 13vh;
+    height: 6vw;
+
+    justify-content: center;
+    margin-left: 0.1vw;
+}
+
+
+.disco-div{
+    position: absolute;
+    left:41vw;
+    top:24vw;
+}
+
+.disco{ 
+    background-image: url('/imagesplay/play_remote_discomode.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 13vh;
+    height: 6vw;
+    justify-content: center;
+    /* margin-left: 0.vw; */
+}
+
+
+.follow-line-div{
+    position: absolute;
+    left:51vw;
+    top:24vw;
+}
+.follow-line{
+    background-image: url('/imagesplay/play_remote_followline.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    
+    width: 13vh;
+    height: 6vw;
+    justify-content: center;
+    margin-left: 0.3vw;
+}
+
+.follow-line-text{
+    margin-left: -1vw;
+
+}
+
+.Remote-mode{
+    position: absolute;
+    top:3vw;
+    left:50vw
+}
+
+.Remote-mode-text{
+    text-align: left;
+/* font: Medium 10px/13px Quicksand; */
+color: #311B92;
+opacity: 1;
+font-weight: 645;
+font-size: 1.1vw;
+margin-block-start: auto;
+
+}
+
+
+/* /---------------------------------------- */
+.remote-unique-text{
+
+    text-align: left;
+    /* font: Medium 10px/13px Quicksand; */
+    color: #311B92;
+    opacity: 1;
+    font-weight: 640;
+    font-size: 1.5vw;
+    margin-block-start: auto;
+    margin-left:3vw
+}
+
+.horn-div{
+    position: absolute;
+    top:11vw;
+    left:75vw;
+}
+
+.horn{
+    background-image: url('/imagesplay/play_remote_button_horn.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    
+    width: 19vh;
+    height: 8vw;
+    justify-content: center;
+
+    /* margin-left: 0.3vw; */
+}
+
+
+.light-div{
+    position: absolute;
+    top:19vw;
+    left:68vw;
+}
+
+.light{
+    background-image: url('/imagesplay/play_remote_button_light.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    
+    width: 19vh;
+    height: 8vw;
+    justify-content: center;
+
+    /* margin-left: 0.3vw; */
+}
+
+.spin-div{
+    position: absolute;
+    top:19vw;
+    left:82.5vw;
+}
+
+.spin{
+    background-image: url('/imagesplay/play_remote_button_spin.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    
+    width: 19vh;
+    height: 8vw;
+    justify-content: center;
+
+    /* margin-left: 0.3vw; */
+}
+
+

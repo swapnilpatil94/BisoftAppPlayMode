@@ -216,7 +216,7 @@ class Traceme extends React.Component {
 
         return (
             <div className="play-introduction">
-                <Link to="/">
+                <Link to="/introduction">
                     <div className="backBtn"></div>
 
                 </Link>
