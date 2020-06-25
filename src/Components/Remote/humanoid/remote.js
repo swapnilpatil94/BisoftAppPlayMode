@@ -465,13 +465,13 @@ class HumanoidRemote extends Component {
     }
     // ----------------Special Mode
     // Horn click 
-    hornClick = () => {
+    bowClick = () => {
         // console.log("Horn Click");
         let data = ['R'.charCodeAt(), "h".charCodeAt()];
         socket.emit('/remote', data);
     }
     // Light
-    lightClick = () => {
+    attentionClick = () => {
         // console.log("Light click");
         let data = ['R'.charCodeAt(), "b".charCodeAt()];
         socket.emit('/remote', data);
@@ -479,12 +479,17 @@ class HumanoidRemote extends Component {
 
     // Spin 
 
-    spinClick = () => {
+    saluteClick = () => {
         // console.log("Spin click");
         let data = ['R'.charCodeAt(), "s".charCodeAt()];
         socket.emit('/remote', data);
     }
 
+    danceClick = () => {
+        // console.log("Spin click");
+        let data = ['R'.charCodeAt(), "d".charCodeAt()];
+        socket.emit('/remote', data);
+    }
 
 
     render() {
@@ -529,19 +534,19 @@ class HumanoidRemote extends Component {
 
                 <div className="Remote-unique">
                     <div className="bow-div">
-                        <div className="bow click" onClick={this.hornClick}></div>
+                        <div className="bow click" onClick={this.bowClick}></div>
                         <p className="remote-unique-text ">Bow</p>
                     </div>
                     <div className="attention-div">
-                        <div className="attention click" onClick={this.hornClick}></div>
+                        <div className="attention click" onClick={this.attentionClick}></div>
                         <p className="remote-unique-text ">Attention</p>
                     </div>
                     <div className="salute-div">
-                        <div className="salute click" onClick={this.lightClick}></div>
+                        <div className="salute click" onClick={this.saluteClick}></div>
                         <p className="remote-unique-text ">Salute</p>
                     </div>
                     <div className="dance-div">
-                        <div className="dance click" onClick={this.spinClick}></div>
+                        <div className="dance click" onClick={this.danceClick}></div>
                         <p className="remote-unique-text ">Dance</p>
                     </div>
                 </div>
