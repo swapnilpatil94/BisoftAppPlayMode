@@ -478,7 +478,6 @@ class HumanoidRemote extends Component {
     }
 
     // Spin 
-
     saluteClick = () => {
         // console.log("Spin click");
         let data = ['R'.charCodeAt(), "s".charCodeAt()];
